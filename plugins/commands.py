@@ -75,6 +75,8 @@ async def approve_new(client, m):
         try:
             await client.send_message(m.from_user.id, "**Hello**")
             await client.send_message(m.from_user.id, "**{}**".format(m.from_user.mention))
+            await client.send_message(m.from_user.id, "**Kaise ho**")
+            await client.send_message(m.from_user.id, "**Bade din baad dikhe**")
         except:
             pass
     except Exception as e:
