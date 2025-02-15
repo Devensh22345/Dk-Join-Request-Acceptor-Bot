@@ -73,8 +73,8 @@ async def approve_new(client, m):
             await client.send_message(LOG_CHANNEL, LOG_TEXT.format(m.from_user.id, m.from_user.mention))
         await client.approve_chat_join_request(m.chat.id, m.from_user.id)
         try:
-            await client.send_message(m.from_user.id, "**Hello {}!\nWelcome To {}\n\n__".format(m.from_user.mention, m.chat.title))
-            await client.send_message(m.from_user.id, "**Hello {}!\nWelcome To {}\n\n__".format(m.from_user.mention, m.chat.title))
+            await client.send_message(m.from_user.id, "**Hello**)
+            await client.send_message(m.from_user.id, "**{}**.format(m.from_user.mention))
         except:
             pass
     except Exception as e:
